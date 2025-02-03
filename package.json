@@ -1,6 +1,6 @@
 {
   "name": "@johntao/dummy1",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "dummy library",
   "main": "index.js",
   "scripts": {
