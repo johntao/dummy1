@@ -1,0 +1,19 @@
+{
+  "name": "dummy1",
+  "version": "0.0.1",
+  "description": "dummy library",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johntao/dummy1.git"
+  },
+  "author": "John Tao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johntao/dummy1/issues"
+  },
+  "homepage": "https://github.com/johntao/dummy1#readme"
+}
