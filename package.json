@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/johntao/dummy1/issues"
   },
-  "homepage": "https://github.com/johntao/dummy1#readme"
+  "homepage": "https://github.com/johntao/dummy1#readme",
+  "publishConfig": {
+    "@johntao:registry": "https://npm.pkg.github.com"
+  }
 }
