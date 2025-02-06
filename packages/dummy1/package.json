@@ -1,6 +1,6 @@
 {
   "name": "@johntao/dummy1",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "dummy library",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johntao/dummy1.git"
+    "url": "git+https://github.com/johntao/dummy1.git",
+    "directory": "packages/dummy1"
   },
   "author": "John Tao",
   "license": "MIT",

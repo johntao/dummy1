@@ -5,29 +5,25 @@ on:
     types: [created]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 16
-      - run: npm ci
-      - run: npm test
-
-  publish-gpr:
-    needs: build
+  release:
     runs-on: ubuntu-latest
     permissions:
       packages: write
       contents: read
+      # id-token: write
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v3
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
           registry-url: https://npm.pkg.github.com/
-      - run: npm ci
-      - run: npm publish
+          cache: 'pnpm'
+      - name: Install Dependencies
+        run: pnpm i
+      - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      # - run: npm test
