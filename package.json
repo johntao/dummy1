@@ -19,5 +19,8 @@
         "search-insights"
       ]
     }
+  },
+  "publishConfig": {
+    "@johntao:registry": "https://npm.pkg.github.com"
   }
 }
